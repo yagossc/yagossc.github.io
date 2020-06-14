@@ -111,8 +111,8 @@ pre{
 
 
 .outline-3{
-    display: grid;
-    grid-template-columns: 40fr 60fr;
+    display: block;
+    /* grid-template-columns: 40fr 60fr; */
 }
 
 /* Responsive content positioning */
@@ -125,7 +125,7 @@ pre{
     .outline-text-2, #table-of-contents{
         padding: 0vh 10vw;
     }
-    #content, .title{
+    #content{
         margin-left: 4rem;
         margin-right: 4rem;
     }
@@ -135,7 +135,7 @@ pre{
 {
     .outline-3{
         margin: 0vh 5vw;
-        display: block;
+        /* display: block; */
     }
 
     .outline-text-2, #table-of-contents{
@@ -221,7 +221,7 @@ a{
 }
 
 .done{
-    color: #1a71ab;
+    color: #017d20;
     font-weight: 400;
 }
 
