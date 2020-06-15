@@ -17,6 +17,8 @@ html, body{
     padding: 0;
     margin: 0;
     background-color: #fdfdfd;
+    height: 100%;
+    /* min-height: 100%; */
 }
 
 /* Header margin */
@@ -53,9 +55,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.outline-2 > h2, #table-of-contents > h2{
-    text-align: center;
-}
+/* .outline-2 > h2, #table-of-contents > h2{ */
+/*     text-align: center; */
+/* } */
 
 .outline-text-2 {
     font-size: var(--font-size-4)
@@ -76,16 +78,6 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #CCC;
 }
 
-.outline-2 > h2{
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.outline-2{
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
 .figure{
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -99,7 +91,6 @@ img{
     max-width: 100%;
 }
 
-
 /* Code */
 pre{
     margin: 1rem;
@@ -109,7 +100,6 @@ pre{
     font-size: var(--font-size-small) !important;
 }
 
-
 .outline-3{
     display: block;
     /* grid-template-columns: 40fr 60fr; */
@@ -118,13 +108,14 @@ pre{
 /* Responsive content positioning */
 @media only screen and (min-width: 750px) /* Large screens */
 {
-    .outline-3{
+    .outline-2 > h2, .outline-3{
         margin: 0vh 10vw;
     }
 
     .outline-text-2, #table-of-contents{
         padding: 0vh 10vw;
     }
+
     #content{
         margin-left: 4rem;
         margin-right: 4rem;
@@ -133,9 +124,8 @@ pre{
 
 @media only screen and (max-width: 750px) /* Small screens */
 {
-    .outline-3{
+    .outline-2 > h2, .outline-3{
         margin: 0vh 5vw;
-        /* display: block; */
     }
 
     .outline-text-2, #table-of-contents{
@@ -155,7 +145,7 @@ p, pre, ol, ul, table, code{
     color: #1A1A1A;
 }
 
-table, blockquote, pre, ol, ul, p, #postamble{
+table, blockquote, pre, ol, ul, p{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -227,12 +217,21 @@ a{
 
 /* Postamble */
 
+/* Add a minimum height for the content */
+/* to ensure the footer's position is correct */
+#content{
+    min-height: calc(100vh - 80px);
+}
+
 #postamble{
     text-align: center;
+    background: #000;
+    color: #FFF;
+    height: 30px;
     width: 100%;
 }
 
-#postamble > p{
+#postamble > span{
     display: inline;
     font-size: var(--font-size-small)
 }
