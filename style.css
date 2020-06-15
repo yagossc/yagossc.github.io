@@ -244,7 +244,7 @@ a{
 #postamble{
     margin-top: 20px;
     text-align: center;
-    background: #000;
+    background: #1a1024;
     color: #FFF;
     height: 30px;
     width: 100%;
@@ -252,7 +252,7 @@ a{
 
 #postamble > span{
     display: inline;
-    font-size: var(--font-size-small)
+    font-size: var(--font-size-xsmall)
 }
 
 .outline-text-2, .outline-text-3, .outline-text-4{
