@@ -18,6 +18,7 @@ html, body{
     margin: 0;
     background-color: #fdfdfd;
     height: 100%;
+    text-align: justify;
 }
 
 /* Header margin */
@@ -55,6 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .title{
     font-size: 3rem;
+    text-align: left;
 }
 
 .outline-text-2 {
@@ -154,6 +156,14 @@ pre{
     .outline-text-2, #table-of-contents{
         padding: 0vh 5vw;
     }
+
+}
+
+@media only screen and (max-width: 400px) /* Really small screens */
+{
+    .profile{
+        display: none;
+    }
 }
 
 
@@ -252,10 +262,20 @@ a{
 
 #postamble > span{
     display: inline;
+    position: relative;
+    top: 2.5px;
     font-size: var(--font-size-xsmall)
 }
 
 .outline-text-2, .outline-text-3, .outline-text-4{
     max-width: 100%;
     overflow-x: auto;
+}
+
+/* Custom */
+.profile{
+    border-radius: 60%;
+    max-width: 200px;
+    float: left;
+    margin-right: 10px;
 }
