@@ -73,7 +73,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-
 #table-of-contents .tag{
     display: none;
 }
@@ -84,6 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .outline-3 > h3{
     margin-bottom: 1vh;
+    text-align: left;
 }
 
 .figure{
@@ -166,13 +166,11 @@ pre{
     }
 }
 
-
 blockquote{
-    border-left: 0.2rem solid #1a71ab;
+    border-left: 0.2rem solid #30114f;
     padding-left: 1rem;
     font-style: italic;
 }
-
 
 p, pre, ol, ul, table, code{
     color: #1A1A1A;
@@ -236,11 +234,13 @@ a{
 .todo{
     color: #7D161A;
     font-weight: 400;
+    text-align: left;
 }
 
 .done{
     color: #017d20;
     font-weight: 400;
+    text-align: left;
 }
 
 /* Postamble */
