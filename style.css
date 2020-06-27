@@ -132,6 +132,10 @@ pre{
         padding: 0vh 10vw;
     }
 
+    .org-ul{
+        padding: 0vh 2vw;
+    }
+
     #content{
         margin-left: 4rem;
         margin-right: 4rem;
@@ -157,12 +161,20 @@ pre{
         padding: 0vh 5vw;
     }
 
+    .org-ul{
+        padding: 0vh 4vw;
+    }
+
 }
 
 @media only screen and (max-width: 400px) /* Really small screens */
 {
     .profile{
         display: none;
+    }
+
+    .org-ul{
+        padding: 0vh 8vw;
     }
 }
 
@@ -203,6 +215,7 @@ h1, h2, h3, h4, h5, h6{
     padding: 1px 5px;
     margin: 1px;
 }
+
 /* Stripe table */
 tr:nth-child(even) {
     background-color: #EEE;
@@ -267,7 +280,9 @@ a{
     font-size: var(--font-size-xsmall)
 }
 
-.outline-text-2, .outline-text-3, .outline-text-4{
+.outline-text-2,
+/* .outline-text-3, */
+.outline-text-4{
     max-width: 100%;
     overflow-x: auto;
 }
