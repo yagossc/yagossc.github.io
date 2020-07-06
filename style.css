@@ -206,8 +206,8 @@ h1, h2, h3, h4, h5, h6{
 
 .tag > span{
     font-weight: 400;
-    font-size: 0.6rem;
-    background-color: #1a71ab;
+    font-size: 1rem;
+    background-color: #30114f;
     text-transform: uppercase;
     border-radius: 2px;
     width: fit-content;
